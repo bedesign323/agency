@@ -121,6 +121,12 @@ function theadmin_theme() {
       'template' => 'templates/page--node--form',
       'render element' => 'form'
     ),
+
+    'artist_node_form' => array(
+      'arguments' => array('form' => NULL),
+      'template' => 'templates/artist--node--form',
+      'render element' => 'form'
+    ),
   );
 }
 
