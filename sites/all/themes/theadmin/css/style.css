@@ -422,14 +422,14 @@ h1, h2, h3, h4 {
 }
 
 /* line 70, ../sass/style.scss */
-h1 {
+h1.page-title {
   font-size: 3em;
   text-align: center;
   letter-spacing: 5px;
   margin-bottom: 40px;
 }
 /* line 75, ../sass/style.scss */
-h1 p
+h1.page-title p
 span {
   color: #bbbbbb;
 }
@@ -1670,32 +1670,101 @@ div.vertical-tabs .vertical-tabs-panes {
   text-align: center;
 }
 
-/* MESSAGES
+/* Artist Teaser: ;
 -------------------------------------------------------------- */
 /* line 1135, ../sass/style.scss */
+.artist.teaser {
+  *zoom: 1;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: #c8c8c8 dashed 1px;
+}
+/* line 38, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.artist.teaser:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 1141, ../sass/style.scss */
+.artist.teaser .bio-image {
+  float: left;
+  margin-right: 10px;
+}
+/* line 1146, ../sass/style.scss */
+.artist.teaser h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/* line 1151, ../sass/style.scss */
+.artist.teaser .icon-cog:before {
+  margin-right: 10px;
+  font-size: .8em;
+}
+/* line 1156, ../sass/style.scss */
+.artist.teaser .btns {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 1.5em;
+}
+/* line 1161, ../sass/style.scss */
+.artist.teaser .btns a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding: 5px 10px;
+}
+/* line 1165, ../sass/style.scss */
+.artist.teaser .btns a:hover {
+  background-color: #e4e4e4;
+}
+/* line 1171, ../sass/style.scss */
+.artist.teaser h3 {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 1.5em;
+  background-color: #dddddd;
+  padding: 5px 10px;
+}
+
+/* MESSAGES
+-------------------------------------------------------------- */
+/* line 1184, ../sass/style.scss */
 div.messages-holder {
   border: none;
   max-width: 800px;
   margin: 0 auto 60px;
+  background-color: #e4e4e4;
 }
-/* line 1140, ../sass/style.scss */
+/* line 1189, ../sass/style.scss */
 div.messages-holder .messages {
   padding: 30px;
   font-family: "Raleway", sans-serif;
   border: none;
 }
-/* line 1146, ../sass/style.scss */
+/* line 1195, ../sass/style.scss */
 div.messages-holder .error,
 div.messages-holder .status {
   background-image: none;
 }
-/* line 1151, ../sass/style.scss */
+/* line 1200, ../sass/style.scss */
 div.messages-holder .error {
   background-color: #b54747;
   color: #f1f1f1;
 }
+/* line 1205, ../sass/style.scss */
+div.messages-holder .warning {
+  background: #f0da72;
+}
 
-/* line 1161, ../sass/style.scss */
+/* line 1210, ../sass/style.scss */
 body div.tabledrag-changed-warning {
   padding: 30px;
   max-width: 800px;
@@ -1706,19 +1775,19 @@ body div.tabledrag-changed-warning {
   border: none;
 }
 
-/* line 1173, ../sass/style.scss */
+/* line 1222, ../sass/style.scss */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: #b54747 solid 2px;
 }
 
 /* EXTRAS
 -------------------------------------------------------------- */
-/* line 1181, ../sass/style.scss */
+/* line 1230, ../sass/style.scss */
 body.cke_show_borders {
   margin: 0 auto;
 }
 
-/* line 1183, ../sass/style.scss */
+/* line 1232, ../sass/style.scss */
 div.krumo-root {
   text-align: left !important;
   margin-left: 20%;

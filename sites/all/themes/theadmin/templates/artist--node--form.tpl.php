@@ -13,7 +13,7 @@
 
 <div class="form-holder clearfix">
 	<?php print render($form['title']); ?>
-	
+	<?php print render($form['field_artist']); ?>
 	<div class="form-group collapsible collapsed">
 		<h2 class="icon">Artist Bio</h2>
 		<div class="body">

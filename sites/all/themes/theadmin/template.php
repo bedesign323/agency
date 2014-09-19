@@ -21,6 +21,7 @@ function theadmin_preprocess_page(&$vars){
 }
 
 
+
  /**
  * Preprocess functions for node.tpl.php.
  */
@@ -60,15 +61,18 @@ function theadmin_preprocess_node(&$vars){
 		//kpr($vars);
 	}
 
-  if($vars['type'] == 'image_gallery'){
-    $images = array();
-
-    for($i = 0; $i < count($vars['field_images']); $i++){
-      $uri = $vars['field_images'][$i]['uri'];
-      $alt = $vars['field_images'][$i]['alt'];
-      $images[] = render_image($uri, $style = 'gallery_large', $alt);
+  if($vars['type'] == 'artist'){
+    if(isset($vars['field_artist_bio_image']['und'])){
+      $uri = $vars['field_artist_bio_image']['und']['0']['uri'];
+      $image_style = array( 'style_name' => 'artist_thumb', 'path' => $uri, 'alt' => '');
+      $vars['bio_image'] = theme('image_style', $image_style);
     }
+
+    dpm($vars);
   }
+
+
+
 
  // kpr($vars);
 }
@@ -129,8 +133,6 @@ function theadmin_theme() {
     ),
   );
 }
-
- 
 
 
 function theadmin_form_alter(&$form, &$form_state, $form_id) {

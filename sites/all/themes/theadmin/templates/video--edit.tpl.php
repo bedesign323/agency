@@ -1,5 +1,6 @@
 <div class="form-holder clearfix">
 	<?php print render($form['title']); ?>
+	<?php print render($form['field_artist']); ?>
 	<?php print render($form['field_video_url']['und'][0]['video_url']); ?>
 	
 	<div class="form-group collapsible collapsed">

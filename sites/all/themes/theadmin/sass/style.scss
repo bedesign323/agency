@@ -67,7 +67,7 @@ h1, h2, h3, h4{
   font-family: $font_header;
 }
 
-h1{
+h1.page-title{
   font-size: 3em;
   text-align: center;
   letter-spacing: 5px;
@@ -1130,13 +1130,62 @@ div.vertical-tabs{
 }
 
 
+/* Artist Teaser: ;
+-------------------------------------------------------------- */
+.artist.teaser{
+	@include pie-clearfix;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	border-bottom: $border_dashed_lt;
+
+	.bio-image{
+		float: left;
+		margin-right: 10px;
+	}
+
+	h2{
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	.icon-cog:before{
+		margin-right: 10px;
+		font-size: .8em;
+	}
+	
+	.btns{
+		@include inline-block;
+		font-size: 1.5em;
+		
+		
+		a{
+			@include inline-block;
+			padding: 5px 10px;
+
+			&:hover{
+				background-color: darken($page_bg, 5%);
+			}
+		}
+	}
+
+	h3{
+		@include inline-block;
+		font-size: 1.5em;
+		background-color: darken($page_bg, 8%);
+		padding: 5px 10px;
+	}
+
+}
+
+
+
 /* MESSAGES
 -------------------------------------------------------------- */
 div.messages-holder{
 	border: none;
 	max-width: 800px;
 	margin: 0 auto 60px;
-
+background-color: darken($page_bg, 5%);
 	.messages{
 		padding: 30px;
 		font-family: $font_header;
@@ -1154,7 +1203,7 @@ div.messages-holder{
 	}
 
 	.warning{
-		
+		background: $color_warning;
 	}
 }
 

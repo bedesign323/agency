@@ -1,6 +1,7 @@
 <div class="form-holder clearfix">
 	
 	<?php print render($form['title']); ?>
+	<?php print render($form['field_artist']); ?>
 	<?php print render($form['field_tags']); ?>
 	
 	<div class="form-group">
